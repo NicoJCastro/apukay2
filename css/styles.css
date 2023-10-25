@@ -23,8 +23,6 @@ html {
 
     /* Para que 1rem sea igual a 10px*/
     box-sizing: border-box;
-
-
 }
 
 *,
@@ -36,15 +34,19 @@ html {
 
 }
 
-body {
-    background-color: var(--primary-color);
+html, body{
+    scroll-behavior: smooth;
 }
+
+
 
 /* Estilos generales */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--primary-color);
+
 }
 
 h1,
@@ -77,6 +79,8 @@ button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: static;
 }
+
+
 
 
 .logo img {
@@ -119,6 +123,22 @@ button {
 /* Media Query para dispositivos con un ancho máximo de 768px */
 @media screen and (max-width: 768px) {
 
+    header {
+        height: 50px; /* Ajusta la altura del encabezado según tus preferencias */
+        padding: 0; /* Puedes eliminar el relleno si lo deseas */
+    }
+
+    .logo img {
+        max-height: 50px; /* Ajusta la altura máxima del logo según tus preferencias */
+        width: auto; /* Ajusta el ancho del logo según tus preferencias */
+    }
+
+    .abrir-menu,
+    .cerrar-menu {
+        font-size: 24px; /* Ajusta el tamaño del botón hamburguesa según tus preferencias */
+        line-height: 50px; /* Alinea verticalmente el botón con la altura del encabezado */
+    }
+
     .abrir-menu,
     .cerrar-menu {
         display: block;
@@ -137,13 +157,12 @@ button {
         display: flex;
         flex-direction: column;
         align-items: end;
-        gap: 2rem;
+        gap: 1rem;
         position: absolute;
         top: 0;
-        right: 0;
-        /* bottom: 0; */
+        right: 0;        
         background-color: var(--primary-color);
-        padding: 2rem;
+        padding: 1rem;
         box-shadow: 0 2px 4px rgba(39, 3, 3, 0.1);
     }
 
@@ -152,28 +171,29 @@ button {
     .menu.visible {
         opacity: 1;
         visibility: visible;
+        
     }
 
     .menu-list {
         flex-direction: column;
-        align-items: end;
+        align-items: center;
 
     }
 
     .menu-list li a {
         color: var(--blacno);
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
 
     }
 
     nav {
-        height: 100%;
+        height: 50%;
         background: #f1faff;
         position: fixed;
         top: 0;
         right: -310px;
-        padding: 0 40px;
+        padding: 2rem;
         transition: all 400ms;
 
     }
@@ -183,7 +203,7 @@ button {
     }
 
     nav ul li {
-        margin: 20px 0px;
+        margin: 7px 0px;
     }
 
 
@@ -791,8 +811,3 @@ button {
     background-color: #128c7e;
     /* Cambia el color al pasar el mouse */
 }
-
-
-
-
-
