@@ -291,22 +291,23 @@ button {
 /* Estilos para pantallas pequeñas */
 @media (max-width: 576px) {
     .contenedor {
-        width: 95%;
+        width: 100%;
         /* Reduzco aún más el ancho en pantallas pequeñas */
         flex-direction: column;
+        margin-top: -10px;
     }
 
     .contenedor h1 {
         font-size: 0.8rem;
-        margin-top: 30px;
-        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 5px;
         left: 70%;
-        top: -5%;
+        
     }
 
     .contenedor p {
-        font-size: 0.31rem;
-        line-height: 1.5;
+        font-size: 0.38rem;
+        /* line-height: 1.5; */
         text-align: center;
 
     }
@@ -335,32 +336,30 @@ button {
 
 @media (max-width: 576px) {
     .plan {
-        width: 95%;
+        width: 100%;
         /* Reduzco aún más el ancho en pantallas pequeñas */
         flex-direction: column;
+        margin-top: -10px;
+        margin-bottom: -10px;
     }
 
     .plan h1 {
         font-size: 0.8rem;
-        margin-top: 30px;
-        margin-bottom: 10px;
+        margin-top: 15px;
+        margin-bottom: 5px;
         left: 25%;
         top: -5%;
     }
 
     .plan p {
-        font-size: 0.31rem;
-        line-height: 1.5;
+        font-size: 0.38rem;
+        /* line-height: 1.5; */
         text-align: center;
+        margin-top: -15px;
 
     }
 
-    .plan img {
-        max-width: 100%;
-        /* Asegura que la imagen no desborde el contenedor */
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
+  
 }
 
 
